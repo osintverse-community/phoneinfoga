@@ -21,7 +21,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/phoneinfoga@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/phoneinfoga@sha256:68f41861c6580adf1acac246734e6975dc5b80f6c11651a1a4da252913162033
   platforms: [linux/amd64, linux/arm64]
   command: ["phoneinfoga", "scan", "-n", "{phone}"]
   output_format: text
