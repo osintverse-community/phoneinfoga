@@ -3,7 +3,7 @@
 schema: 1
 name: phoneinfoga
 namespace: osintverse-community
-version: 2.11.1
+version: 2.11.2
 summary: "Scans a phone number: carrier, line type and country, plus search links to find where it appears"
 readme: README.md
 license: GPL-3.0
@@ -21,7 +21,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/phoneinfoga@sha256:92ff7ab01bca5144e53a900756d0af3d6ffe7cbeadeda2f8dd2b1d77aa17fc1f
+  image: ghcr.io/osintverse-community/phoneinfoga@sha256:b1e9c28ea9612783e6d3b04d336abcda360df245a455a063ce8b55325c99c640
   platforms: [linux/amd64, linux/arm64]
   command: ["phoneinfoga", "scan", "-n", "{phone}"]
   output_format: text
